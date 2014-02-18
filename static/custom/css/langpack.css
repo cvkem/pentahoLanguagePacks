@@ -1,3 +1,6 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 /*
  * WDStyleGuide Template CSS
  *
@@ -71,7 +74,7 @@ time, mark, audio, video {
 
 /* Window Background */
 body{
-    background-color: #E0EBEF;
+    background-color: #FFFFFF;
 }
 /* Dashboard Background / Blueprint Container */
 div.container  {
@@ -139,6 +142,8 @@ div.container  {
   padding:0;
   margin:0;
   border:0;
+  border-style: none;
+  border-color: white;
   background:none;
 
 
@@ -192,8 +197,8 @@ div.container  {
   display:block;
   float:left;
   margin-left:-200px;
-  padding-top:40px;
-  padding-left:75px;
+  padding-top:24px;
+  padding-left:57px;
 }
 .languageDialogContainer .contentWrapper {
   width:100%;
@@ -251,6 +256,17 @@ div.container  {
     color: #1973BC;
     font-size: 18px;
 }
+.languageDialogContainer .titleContainer b
+{
+  width: 44px;
+  height: 28px;
+  background: transparent url('../img/flag.png') 0px 0px no-repeat;
+  display: inline-block;
+  background-size: 43.75px 27.5px;
+  margin-bottom: -10px;
+  margin-right: 2px;
+
+}
 
 .languageDialogContainer .msgContainer
 {
@@ -288,11 +304,23 @@ div.container  {
   top:0px;
   left:0px;
 }
-.languageDialogContainer .infoContainer .info a{
-  font-family: 'OpenSansSemibold', Arial, sans-serif;
+
+.languageDialogContainer .infoContainer .info a,
+.languageDialogContainer .msgContainer .error a
+{
+  /* font-family: 'OpenSansSemibold', Arial, sans-serif; */
   color: #1973BC;
-  font-size: 12px;
   text-decoration:none;
+}
+.languageDialogContainer .infoContainer .info a
+{
+  font-family: 'OpenSansSemibold', Arial, sans-serif; 
+  font-size: 12px;
+}
+
+.languageDialogContainer .msgContainer .error div
+{
+  color: #f41b20;
 }
 
 .languageDialogContainer .btnContainer .btn button{
@@ -352,8 +380,7 @@ div.container  {
 {
     background: inherit;
     border: none;
-    color: inherit;
+    color: #008131;
     padding: 0;
 }
-
 

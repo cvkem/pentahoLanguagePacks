@@ -1,9 +1,9 @@
 {
     "appTitle": "Hindi Language Pack Installer",
     "appWelcomeMessage": "This plugin installs language definitions for the Hindi language in Pentaho 5",
-    "language": "Hindi",
+    "language": "हिंदी",
     "languageCode": "hi",
-    "version": "1.0",
+    "version": "0.6",
     "pentahoVersion": "5.0.1",
     "maintainer": {
         "name": "InfoAxon Technologies",
